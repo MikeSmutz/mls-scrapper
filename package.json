@@ -1,0 +1,51 @@
+{
+  "name": "mls-scrapper",
+  "version": "1.0.0",
+  "description": "MLS (Multiple Listing Service) web scraper built with Playwright for real estate data extraction",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --project=chromium-headed",
+    "test:headless": "playwright test --project=chromium-headless",
+    "test:mobile": "playwright test --project=mobile-chrome",
+    "test:stealth": "playwright test --project=stealth-chromium",
+    "test:ui": "playwright test --ui",
+    "test:debug": "playwright test --debug",
+    "test:report": "playwright show-report",
+    "test:trace": "playwright show-trace",
+    "codegen": "playwright codegen",
+    "install:browsers": "playwright install",
+    "automation:scrape": "playwright test automation/scraping",
+    "automation:forms": "playwright test automation/forms",
+    "automation:api": "playwright test automation/api",
+    "lint": "eslint . --ext .ts,.js",
+    "format": "prettier --write ."
+  },
+  "keywords": [
+    "mls",
+    "real-estate",
+    "scraping",
+    "playwright",
+    "automation",
+    "property-data",
+    "multiple-listing-service"
+  ],
+  "author": "",
+  "license": "MIT",
+  "type": "commonjs",
+  "devDependencies": {
+    "@playwright/test": "^1.55.0",
+    "@types/node": "^24.3.1",
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0",
+    "eslint": "^8.0.0",
+    "prettier": "^3.0.0",
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.0",
+    "csv-parse": "^5.0.0",
+    "xlsx": "^0.18.0",
+    "fast-csv": "^4.3.0"
+  }
+}

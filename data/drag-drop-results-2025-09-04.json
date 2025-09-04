@@ -1,0 +1,12 @@
+{
+  "before": {
+    "columnA": "A",
+    "columnB": "B"
+  },
+  "after": {
+    "columnA": "B",
+    "columnB": "A"
+  },
+  "success": true,
+  "testedAt": "2025-09-04T14:13:12.733Z"
+}
